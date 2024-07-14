@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+.header {
+  background-color: rgb(243, 243, 243);
+}
+
+.header-inner {
+  position: relative;
+  height: 400px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/header_inner.jpeg);
+}
+
+.char-color {
+  font-size: 60px;
+  text-align: center;
+  width: 100%;
+}
+.char-color h6 {
+  position: relative;
+  font-size: 18px;
+  color: rgb(121, 198, 172);
+  bottom: 45px;
+  height: 45px;
+
+}
+
+.T {
+  color: magenta;
+}
+.o {
+  color: tomato;
+}
+.d {
+  color: yellow;
+}
+.f {
+  color: #d6fccd;
+}
+.u {
+  color: chartreuse;
+}
+
+.caption {
+  position: relative;
+  z-index: 10;
+  right: 1em;
+  bottom: 1em;
+  color: #ffffff;
+  font-size: 0.7rem;
+  line-height: 1;
+  letter-spacing: .05em;
+  text-align: right;
+}
+
+.caption a {
+  color: #ffffff;
+}
+
+.search {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+}
+
+.search-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #3879D9;
+  padding: 3px 5px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 2.2em;
+  width: 400px;
+  overflow: hidden;
+}
+
+.search-container input[type="text"]{
+  border: none;
+  height: 1.8em;
+}
+
+.search-container input[type="text"]:focus {
+  outline: 0;
+}
+
+.search-container input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  border: none;
+  background: #3879D9;
+  color: #fff;
+  position: absolute;
+  width: 3.5em;
+  height: 3.0em;
+  right:0px;
+  top: -5px;
+  outline : none;
+}
+
+.search-container ::-webkit-input-placeholder {
+  color: #3879D9;
+}
+
+.select-box {
+  position: relative;
+}
+
+.select-box::before,
+.select-box::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.select-box::before {
+  display: inline-block;
+  right: 0;
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 0 3px 3px 0;
+  border-right: 2px solid #3879D9;
+  background-color: #ffffff;
+}
+
+.select-box::after {
+  position: absolute;
+  top: 50%;
+  right: 1.4em;
+  transform: translate(50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+
+.select-box select {
+  appearance: none;
+  min-width: 400px;
+  height: 10em;
+  padding: .4em 3.6em .4em .8em;
+  border-top: none;
+  border-left: 2px solid #3879D9;
+  border-bottom: 2px solid #3879D9;
+  border-right: 2px solid #3879D9;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color:   #ffffff;
+  text-align: center;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.select-box select:focus {
+  outline: 2px solid #ffffff;
+}
+
+#prefecture-List {
+  width: 0.9em; 
+  max-width: 100%;
+  position: relative; 
+}
+
+#search-box {
+  width: 200px; 
+  max-width: 100%;
+  padding: 4.5em; 
+  font-size: 16px; 
+}
+main {
+  background-color: rgb(243, 243, 243);;
+}
+
+.help {
+  text-align: center;
+  background-color: rgb(111, 111, 111);
+}
+.help h3 {
+  color: #c9e9ff;
+}
+
+.help h6{
+  color: #ffffff;
+}
+
+.underline {
+  color: aquamarine;
+  text-decoration: underline;
+}
+
+.enter {
+  color: gold;
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  background-color: black;
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {  
+  .header-inner {
+    position: relative;
+    height: 400px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/japan.png);   /*スマホなどの横幅が800px以下のものでは背景の画像を変更*/
+  }
+}

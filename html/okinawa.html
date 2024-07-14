@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Okinaw</title>
+<meta name="viewport" content="width=device-width">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="object-fitプロパティならbackground-positionと同じように画像配置を指定できる">
+<meta name="theme-color" content="#553968">
+<link rel="canonical" href="https://lopan.jp/halfscreen-photo-header/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis&family=Ubuntu+Condensed&display=swap">
+<link rel="stylesheet" href="../css/styles.css">
+<link href="../css/drop.css" rel="stylesheet">
+<!-- <script src="js/script.js"></script> -->
+
+<!-- ヘッダースタイル -->
+<style>
+header {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 50vh;
+}
+header figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+header figure img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Font Awesome のリンク -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- ホームアイコン -->
+<a class="menu-icon" href="index.html"><i class="fas fa-home"></i></a>
+
+
+
+    <!-- メニューリスト -->
+    <nav class="nav-menu">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="index.html">Home</a>
+            </li>
+            <!-- 北海道 -->
+            <li class="menu-item drop-menu">
+                <a href="#">北海道地方</a>
+                <ul class="drop-menu-list">
+                    <a href="hokkaido.html">北海道</a>
+                </ul>
+            </li>
+            <!-- 東北 -->
+            <li class="menu-item drop-menu">
+                <a href="#">東北地方</a>
+                <ul class="drop-menu-list">
+                    <li class="drop-menu-item">
+                        <a href="aomori.html">青森県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="iwate.html">岩手県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="miyagi.html">宮城県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="akita.html">秋田県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="yamagata.html">山形県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="fukushima.html">福島県</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- 関東 -->
+            <li class="menu-item drop-menu">
+                <a href="#">関東地方</a>
+                <ul class="drop-menu-list">
+                    <li class="drop-menu-item">
+                        <a href="ibaraki.html">茨城県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="tochigi.html">栃木県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="gunma.html">群馬県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="saitama.html">埼玉県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="chiba.html">千葉県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="tokyo.html">東京都</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="kanagawa.html">神奈川県</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- 中部 -->
+            <li class="menu-item drop-menu">
+                <a href="#">中部地方</a>
+                <ul class="drop-menu-list">
+                    <li class="drop-menu-item">
+                        <a href="niigata.html">新潟県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="toyama.html">富山県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="ishikawa.html">石川県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="fukui.html">福井県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="yamanashi.html">山梨県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="nagano.html">長野県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="gifu.html">岐阜県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="sizuoka.html">静岡県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="aichi.html">愛知県</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- 近畿 -->
+            <li class="menu-item drop-menu">
+                <a href="#">近畿地方</a>
+                <ul class="drop-menu-list">
+                    <li class="drop-menu-item">
+                        <a href="mie.html">三重県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="shiga.html">滋賀県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="kyoto.html">京都府</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="osaka.html">大阪府</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="hyogo.html">兵庫県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="nara.html">奈良県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="wakayama.html">和歌山県</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- 中国 -->
+            <li class="menu-item drop-menu">
+                <a href="#">中国地方</a>
+                <ul class="drop-menu-list">
+                    <li class="drop-menu-item">
+                        <a href="tottori.html">鳥取県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="shimane.html">島根県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="okayama.html">岡山県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="hiroshima.html">広島県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="yamaguchi.html">山口県</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- 四国 -->
+            <li class="menu-item drop-menu">
+                <a href="#">四国地方</a>
+                <ul class="drop-menu-list">
+                    <li class="drop-menu-item">
+                        <a href="tokushima.html">徳島県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="kagawa.html">香川県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="ehime.html">愛媛県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="kochi.html">高知県</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- 九州 -->
+            <li class="menu-item drop-menu">
+                <a href="#">九州地方</a>
+                <ul class="drop-menu-list">
+                    <li class="drop-menu-item">
+                        <a href="fukuoka.html">福岡県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="saga.html">佐賀県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="nagasaki.html">長崎県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="kumamoto.html">熊本県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="oita.html">大分県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="miyazaki.html">宮崎県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="kagoshima.html">鹿児島県</a>
+                    </li>
+                    <li class="drop-menu-item">
+                        <a href="okinawa.html">沖縄県</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+<div id="wrapper">
+    <header class="cover">
+		<h1>沖縄県</h1>
+		<figure>
+			<img src="../images/si-sa.jpg" alt="horizontal" width="1024" height="768">
+			<figcaption class="caption">photo credit: blavandmaster <a href="http://www.flickr.com/photos/38134034@N04/36391599612">Nordic Summer Light</a> via <a href="http://photopin.com">photopin</a> <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">(license)</a></figcaption>
+		</figure>
+	</header>
+
+	<main>
+
+        <h1></h1>
+
+		<div class="flex">
+            <div class="image-container">
+                <img src="../images/okinawa.png" alt="Image">
+            </div>
+            <div class="text-container">
+                <h1>沖縄県</h1>
+                <p>
+                    県庁所在地：那覇市<br>
+                    人口：約147万人（2024年現在）<br>
+                    面積：2,271.30km²<br>
+                    県の木：リュウキュウマツ<br>
+                    県の鳥：ノグチゲラ<br>
+                </p>
+            </div>
+        </div>
+
+        <!-- 空白を追加 -->
+        <div class="space"></div>
+
+        <h1 class="centered-title">
+            <img src="../images/cow1.png" alt="Image">
+            特産品
+        </h1>
+        
+        
+        <div class="flex">
+            <div class="text-container1">
+                <h1>①ゴールドバレル</h1>
+                <p>
+                    ゴールドバレルとは,国産パイナップルの1つで,沖縄県で生産されています。
+                    パイナップルは99％が外国産であり、国産パイナップルは希少価値が高いです。
+                    ゴールドバレルは,糖度16.5度（メロンの平均糖度が14度）と高く,また酸味が少ないのが特徴です。<br>
+                    一方、他の品種が2年に1回収穫できるのに対し,ゴールドバレルは3～4年に1回しか収穫できないため,栽培に手間がかるなどコストと労力が必要な品種とされています。<br>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="../images/goldbalelu.jpg" alt="Image">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="image-container">
+                <img src="../images/okinawasoba.jpg" alt="Image">
+            </div>
+            <div class="text-container1">
+                <h1>②沖縄そば</h1>
+                <p>
+                    沖縄そばは、沖縄県の郷土料理であり、沖縄県内の飲食店や家庭で食べられている麺料理です。
+                    一般的な日本そばとは異なり、麺は小麦粉と塩、水で作られた太い麺で、スープは豚骨をベースにしたスープが使われます。
+                    また、具材には、豚肉、油揚げ、ネギ、紅しょうがなどが使われます。
+                    沖縄そばは、沖縄県内の飲食店や家庭で食べられている麺料理です。
+                    一般的な日本そばとは異なり、麺は小麦粉と塩、水で作られた太い麺で、スープは豚骨をベースにしたスープが使われます。
+                    また、具材には、豚肉、油揚げ、ネギ、紅しょうがなどが使われます。
+                </p>
+            </div>
+        </div>
+        
+
+	</main>
+
+	<footer>
+		<p class="copyright"><small>© 2024 YuukiT</small></p>
+	</footer>
+</div>
+
+</body>
+</html>

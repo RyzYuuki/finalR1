@@ -1,0 +1,117 @@
+/* ナビゲーションメニュー */
+.nav-menu {
+
+    display: none; /* 初期状態では非表示に */
+    background-color: #333; /* メニューの背景色 */
+    color: #fff; /* メニューテキストの色 */
+    position: fixed;
+    top : 0;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: column; /* メニューリストを縦並びに */
+
+}
+.menu-list {
+    display: flex;
+    justify-content: center; /* メニューアイテムを中央揃えに */
+    font-size: large;
+    font-family: "Noto Serif JP", serif;
+}
+.menu-item {
+    border-left: 1px solid #fff; /* メニューアイテムの左ボーダー */
+    position: relative;
+}
+.menu-item:last-child {
+    border-right: 1px solid #fff; /* 最後のメニューアイテムの右ボーダー */
+}
+
+/* メニューアイテムのホバースタイル */
+.menu-item:hover .drop-menu-list {
+    visibility: visible; /* 下層メニューを表示 */
+}
+
+.menu-item a {
+    align-items: center;
+    color: #fff; /* メニューアイテム内のリンクテキストの色 */
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    text-decoration: none; /* リンクの下線を非表示 */
+    width: 120px;
+}
+
+/* ドロップダウンメニュー */
+.drop-menu {
+    position: relative;
+}
+
+.drop-menu-list {
+    background-color: #696969; /* ドロップダウンメニューの背景色 */
+    left: 0;
+    position: absolute;
+    top: 100%;
+    visibility: hidden; /* 下層メニューを非表示 */
+    width: max-content;
+    z-index: 1;
+    flex-direction: column; /* 下層メニューを縦並びに */
+}
+
+.drop-menu-item {
+    border-top: 1px solid #fff; /* 下層メニューアイテムの上ボーダー */
+}
+
+.drop-menu-item a {
+    display: block;
+    padding: 10px;
+    color: #fff; /* メニューアイテム内のリンクテキストの色 */
+    text-decoration: none; /* リンクの下線を非表示 */
+}
+
+.drop-menu-item:last-child {
+    border-bottom: 1px solid #fff; /* 最後の下層メニューアイテムの下ボーダー */
+}
+
+/* メニューアイコンのスタイル */
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 10px;
+    color: #333;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1001; /* メニューよりも上に表示 */
+}
+
+/* ハンバーガーメニュー表示時 */
+.nav-menu.active {
+    display: flex; /* 表示をflexに */
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none; /* PCでは非表示に */
+    }
+
+    .nav-menu {
+        position: absolute;
+    }
+
+    /* .is-show追加 */
+    .nav-menu{
+        display: block; /* PCでは常に表示 */
+    }
+
+    .drop-menu-list {
+        display: none;
+    }
+    
+
+    .drop-menu:hover .drop-menu-list {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+}

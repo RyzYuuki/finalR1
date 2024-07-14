@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="全都道府県特産物を紹介!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="temp" rel="temp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Todoufu 都道府県の特産品を検索</title>
+</head>
+
+<body>
+    <!--headerここから-->
+    <header class="header">
+        <div class="header-inner">
+            <div class="char-color">    
+                <span class="T">T</span>
+                <span class="o">o</span>
+                <span class="d">d</span>
+                <span class="o">o</span>
+                <span class="u">u</span>
+                <span class="f">f</span>
+                <span class="u">u</span>
+                <h6>都道府県の特徴，特産品を簡単に検索!</h6>
+            </div>
+        </div>
+        <figcaption class="caption">
+            src:
+            <a href="http://photopin.com">photopin</a>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">(license)</a>
+        </figcaption>
+    </header>
+    <!--ここまで-->
+
+    <!--mainここから-->
+    <main>
+        <!--検索ボックス-->
+        <div class="search">
+            <div class="search-container">
+                <input type="text" id="search-box" name="input" placeholder="県名を入力してください..." 
+                oninput="filterKeywords()" onkeyup="enter(event)">
+                <input type="submit" id="search-submit" value="&#xf002" onclick="pageTransition()">
+            </div>      
+            
+            <!--セレクトボックス-->
+            <label class="select-box">
+                <select id="prefecture-List" size="5" onchange="location.href=value;">
+                    <div class="prefecture-item">
+                        <option value="hokkaido.html">北海道</option>
+                        <option value="aomori.html">青森県</option>
+                        <option value="iwate.html">岩手県</option>
+                        <option value="miyagi.html">宮城県</option>
+                        <option value="akita.html">秋田県</option>
+                        <option value="yamagata.html">山形県</option>
+                        <option value="fukushima.html">福島県</option>
+                        <option value="ibaraki.html">茨城県</option>
+                        <option value="tochigi.html">栃木県</option>
+                        <option value="gunma.html">群馬県</option>
+                        <option value="saitama.html">埼玉県</option>
+                        <option value="chiba.html">千葉県</option>
+                        <option value="tokyo.html">東京都</option>
+                        <option value="kanagawa.html">神奈川県</option>
+                        <option value="niigata.html">新潟県</option>
+                        <option value="toyama.html">富山県</option>
+                        <option value="ishikawa.html">石川県</option>
+                        <option value="fukui.html">福井県</option>
+                        <option value="yamanashi.html">山梨県</option>
+                        <option value="nagano.html">長野県</option>
+                        <option value="gifu.html">岐阜県</option>
+                        <option value="shizuoka.html">静岡県</option>
+                        <option value="aichi.html">愛知県</option>
+                        <option value="mie.html">三重県</option>
+                        <option value="shiga.html">滋賀県</option>
+                        <option value="kyoto.html">京都府</option>
+                        <option value="osaka.html">大阪府</option>
+                        <option value="hyogo.html">兵庫県</option>
+                        <option value="nara.html">奈良県</option>
+                        <option value="wakayama.html">和歌山県</option>
+                        <option value="tottori.html">鳥取県</option>
+                        <option value="shimane.html">島根県</option>
+                        <option value="okayama.html">岡山県</option>
+                        <option value="hiroshima.html">広島県</option>
+                        <option value="yamaguchi.html">山口県</option>
+                        <option value="tokushima.html">徳島県</option>
+                        <option value="kagawa.html">香川県</option>
+                        <option value="ehime.html">愛媛県</option>
+                        <option value="kochi.html">高知県</option>
+                        <option value="fukuoka.html">福岡県</option>
+                        <option value="saga.html">佐賀県</option>
+                        <option value="nagasaki.html">長崎県</option>
+                        <option value="kumamoto.html">熊本県</option>
+                        <option value="oita.html">大分県</option>
+                        <option value="miyazaki.html">宮崎県</option>
+                        <option value="kagoshima.html">鹿児島県</option>
+                        <option value="okinawa.html">沖縄県</option>
+                    </div>
+                </select>
+            </label>    
+        </div>
+        <script defer src="..\scripts\index.js"></script>
+        <div class="help">
+            <h3>※このページの使い方がわからない方へ※</h3>
+            <h6>このページでは各都道府県の特産品と特徴の紹介ページへと移ることができます．
+                ページの移動方法は<span class="underline">調べたい県名を入力した後に</span><span class="enter">Enter</span>または<span class="underline">
+                検索マークをクリック</span>，入力中に表示される<span class="underline">検索候補リストをクリック</span>しても移動することができます．
+            </h6>
+        </div>
+    </main>
+    <!--ここまで-->
+
+    <footer>
+        <p class="copyright">
+            <small>© 2024 Seiya Deguchi</small>
+        </p>
+    </footer>
+</body>
+</html>
